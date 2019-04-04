@@ -18,11 +18,14 @@ class Instructor extends Person {
         this.favLanguage = instructorAttr.favLanguage;
         this.catchPhrase = instructorAttr.catchPhrase;
     }// Methods
-    demo() {
+    demo(subject) {
         //rcv string and log out 'Today we are learning about {subject}' 
+        return `Today we are learning about ${subject}.`;
     }
-    grade() {
+    grade(student, subject) {
         //rcv student object, subject string, and logs '{student.name} receives a perfect score on {subject}'
+      
+        return `${student.name} receives a perfect score on ${subject}`;
     }
 }// Instructor
 
@@ -35,12 +38,15 @@ class Student extends Person {
     }// Methods
     listsSubjects() {
         // console favSubjects
+        return `My favorite subjects are ${this.favSubjects}`;
     }
-    PRAssignment() {
+    PRAssignment(subject) {
         // rcv (subject) and log student.name has submitted a PR for {subject}
+        return `${this.name} has submitted a PR for ${subject}`;
     }
-    sprintChallenge() {
+    sprintChallenge(subject) {
         // rcv (subject) and log student.name has begun sprint challenge on {subject}
+        return `${this.name} has begun a sprint challenge on for ${subject}`;
     }
 }// Student
 
@@ -50,11 +56,13 @@ class ProjectManagers extends Instructor {
         this.gradClassName = pmAttr.gradClassName;
         this.favInstructor = pmAttr.favInstructor;
     }// Methods
-    standUp() {
+    standUp(channel) {
         // take slack channel and log `{name} announces to {channel}, @channel standy times!​​​​​
+        return `${this.name} announces to ${channel}, @channel standy times!`;
     }
-    deBugsCode() {
+    deBugsCode(student, subject) {
         // takes in student object and log {name} debugs {student.name}'s code on {subject}
+        return `${this.name} debugs ${student.name}'s code on ${subject}`;
     }
 }// Project Managers
 
@@ -137,3 +145,10 @@ console.log(john.gender);
 console.log(elliot.gender);
 console.log(mary.favLanguage);
 console.log(bob.speak());
+console.log(mary.demo('javaScript'));
+console.log(bob.grade(rory, 'javaScript'));
+console.log(carly.listsSubjects());
+console.log(john.PRAssignment('PreProcessing'));
+console.log(rory.sprintChallenge('JS Fundamentals'));
+console.log(marni.standUp('myPMgroup'));
+console.log(elliot.deBugsCode(rory, 'constructor functions'));
