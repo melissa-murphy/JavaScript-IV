@@ -60,5 +60,21 @@ class ProjectManagers extends Instructor {
 
 //Instructor templates
 const bob = new Instructor({
-
+    name: 'Bob',
+    age: '42',
+    location: 'Northern California',
+    gender: 'male',
+    speciality: 'Ruby',
+    favLanguage: 'JS',
+    catchPhrase: 'You got this'
 })
+const mary = new Instructor({
+    name: 'Mary',
+    age: '34',
+    location: 'Western New York',
+    gender: 'female',
+    speciality: 'Python',
+    favLanguage: 'R',
+    catchPhrase: 'Get goin!'
+})
+
