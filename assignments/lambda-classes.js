@@ -26,6 +26,10 @@ class Instructor extends Person {
         //rcv student object, subject string, and logs '{student.name} receives a perfect score on {subject}'
         return `${student.name} receives a perfect score on ${subject}`;
     }
+    totalGrade(student) {
+        let studentGrade =  student.myGrade - Math.random();
+        return `${student.name} has received a total grade of ${studentGrade}`
+    }
 }// Instructor
 
 class Student extends Person {
@@ -33,7 +37,8 @@ class Student extends Person {
         super(studentAttr);
         this.previousBg = studentAttr.previousBg;
         this.className = studentAttr.className;
-        this.favSubjects = studentAttr.favSubjects
+        this.favSubjects = studentAttr.favSubjects;
+        this.myGrade = studentAttr.myGrade;
     }// Methods
     listsSubjects() {
         // console favSubjects
@@ -117,7 +122,8 @@ const carly = new Student({
     gender: 'female',
     previousBackground: 'owned a small business',
     className: 'Web16',
-    favSubjects: ['UX', 'Responsive web design']
+    favSubjects: ['UX', 'Responsive web design'],
+    myGrade: '98'
 });
 const john = new Student({
     name: 'John',
@@ -126,7 +132,8 @@ const john = new Student({
     gender: 'male',
     previousBackground: 'teacher',
     className: 'Web12',
-    favSubjects: ['JS', 'Computer Science']
+    favSubjects: ['JS', 'Computer Science'],
+    myGrade: '89'
 });
 const rory = new Student({
     name: 'Rory',
@@ -135,7 +142,8 @@ const rory = new Student({
     gender: 'female',
     previousBackground: 'self-employed',
     className: 'Web18',
-    favSubjects: ['UX', 'Data Science']
+    favSubjects: ['UX', 'Data Science'],
+    myGrade: '82'
 });
 
 // Tests
@@ -151,3 +159,5 @@ console.log(john.PRAssignment('PreProcessing'));
 console.log(rory.sprintChallenge('JS Fundamentals'));
 console.log(marni.standUp('myPMgroup'));
 console.log(elliot.deBugsCode(rory, 'constructor functions'));
+console.log(mary.totalGrade(carly));
+console.log(elliot.totalGrade(carly));
