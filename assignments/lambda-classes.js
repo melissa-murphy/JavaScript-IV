@@ -67,7 +67,7 @@ const bob = new Instructor({
     speciality: 'Ruby',
     favLanguage: 'JS',
     catchPhrase: 'You got this'
-})
+});
 const mary = new Instructor({
     name: 'Mary',
     age: '34',
@@ -76,7 +76,7 @@ const mary = new Instructor({
     speciality: 'Python',
     favLanguage: 'R',
     catchPhrase: 'Get goin!'
-})
+});
 
 // PM templates
 const marni = new ProjectManagers({
@@ -89,7 +89,7 @@ const marni = new ProjectManagers({
     catchPhrase: 'Smash that code',
     gradClassName: 'CS2',
     favInstructor: 'Bob'
-})
+});
 const elliot = new ProjectManagers({
     name: 'Elliot',
     age: '28',
@@ -100,6 +100,33 @@ const elliot = new ProjectManagers({
     catchPhrase: 'Code is life',
     gradClassName: 'CS12',
     favInstructor: 'Mary'
-})
+});
 
 // Student templates
+const carly = new Student({
+    name: 'Carly',
+    age: '54',
+    location: 'Texas',
+    gender: 'female',
+    previousBackground: 'owned a small business',
+    className: 'Web16',
+    favSubjects: ['UX', 'Responsive web design']
+});
+const john = new Student({
+    name: 'John',
+    age: '26',
+    location: 'North Carolina',
+    gender: 'male',
+    previousBackground: 'teacher',
+    className: 'Web12',
+    favSubjects: ['JS', 'Computer Science']
+});
+const rory = new Student({
+    name: 'Rory',
+    age: '30',
+    location: 'Nevada',
+    gender: 'female',
+    previousBackground: 'self-employed',
+    className: 'Web18',
+    favSubjects: ['UX', 'Data Science']
+});
