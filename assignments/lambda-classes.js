@@ -24,7 +24,6 @@ class Instructor extends Person {
     }
     grade(student, subject) {
         //rcv student object, subject string, and logs '{student.name} receives a perfect score on {subject}'
-
         return `${student.name} receives a perfect score on ${subject}`;
     }
 }// Instructor
