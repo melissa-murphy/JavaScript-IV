@@ -7,7 +7,7 @@ class Person {
         this.gender = personAttr.gender;
     }//Methods
     speak() {
-        return `Hello, my name is ${name}, and I am from ${location}.`;
+        return `Hello, my name is ${this.name}, and I am from ${this.location}.`;
     }
 }//Person
 
@@ -130,3 +130,10 @@ const rory = new Student({
     className: 'Web18',
     favSubjects: ['UX', 'Data Science']
 });
+
+// Tests
+console.log(carly.gender);
+console.log(john.gender);
+console.log(elliot.gender);
+console.log(mary.favLanguage);
+console.log(bob.speak());
