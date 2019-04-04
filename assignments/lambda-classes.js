@@ -78,3 +78,22 @@ const mary = new Instructor({
     catchPhrase: 'Get goin!'
 })
 
+// PM templates
+const marni = new ProjectManagers({
+    name: 'Marni',
+    age: '33',
+    location: 'LA',
+    gender: 'female',
+    speciality: 'JS',
+    favLanguage: 'JS',
+    catchPhrase: 'Smash that code'
+})
+const elliot = new ProjectManagers({
+    name: 'Elliot',
+    age: '28',
+    location: 'San Jose',
+    gender: 'male',
+    speciality: 'C++',
+    favLanguage: 'all the languages!',
+    catchPhrase: 'Code is life'
+})
