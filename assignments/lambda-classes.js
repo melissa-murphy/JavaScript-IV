@@ -86,7 +86,9 @@ const marni = new ProjectManagers({
     gender: 'female',
     speciality: 'JS',
     favLanguage: 'JS',
-    catchPhrase: 'Smash that code'
+    catchPhrase: 'Smash that code',
+    gradClassName: 'CS2',
+    favInstructor: 'Bob'
 })
 const elliot = new ProjectManagers({
     name: 'Elliot',
@@ -95,5 +97,9 @@ const elliot = new ProjectManagers({
     gender: 'male',
     speciality: 'C++',
     favLanguage: 'all the languages!',
-    catchPhrase: 'Code is life'
+    catchPhrase: 'Code is life',
+    gradClassName: 'CS12',
+    favInstructor: 'Mary'
 })
+
+// Student templates
